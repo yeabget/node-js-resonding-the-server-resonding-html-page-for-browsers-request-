@@ -5,4 +5,6 @@
 npm init-to install package.json<br>
 npm install-to install node module<br>
 npm install express- to install express<br>
+<%  %>-to write javascript code inside html
+
 
