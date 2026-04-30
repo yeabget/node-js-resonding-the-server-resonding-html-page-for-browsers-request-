@@ -1,4 +1,4 @@
 ## status code
-200 **ok
-404**not found
-500**internal server error
+200 -ok<br>
+404-not found<br>
+500-internal server error
