@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja blog/<%= title %></title>
+</head>
+<body>
+    <%- include('partials/nav') %>
+    <div class="container">
+    <h1>Blog Ninja</h1>
+    
+    <h3>All blogs</h3>
+
+    <% if (blogs && blogs.length > 0) { %>
+        <% blogs.forEach(blog => { %>
+            <h3><%= blog.title %></h3>
+            <p><%= blog.desc %></p>
+        <% }) %>
+    <% } else { %>
+        <p>There are no blogs to display</p>
+    <% } %>
+    </div>
+<%- include('./partials/footer')%>
+<style>
+    .container{
+        width: 100%;
+        height: 80vh;
+        padding: 20px;
+      
+    }
+h1{
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+</body>
+</html>
